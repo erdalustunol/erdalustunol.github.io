@@ -562,19 +562,19 @@ let lang = new URLSearchParams(location.search).get('lang') === 'tr' ? 'tr' : 'e
 const $ = id => document.getElementById(id);
 
 const projects = [
-  { id: 'KK-01', url: 'GameKingdom10.html', art: 'kingdom', h: { en: 'Little Kingdom', tr: 'Küçük Krallık' }, stack: 'Canvas · JS',
+  { id: 'KK-01', url: 'https://erdevelop.com/GameKingdom10.html', art: 'kingdom', h: { en: 'Little Kingdom', tr: 'Küçük Krallık' }, stack: 'Canvas · JS',
     type: { en: 'Browser game', tr: 'Tarayıcı oyunu' },
     s: { en: 'A calm village strategy game: wood, stone, farms, wells, soldiers and ages to advance through.', tr: 'Sakin bir köy strateji oyunu: odun, taş, çiftlik, kuyu, asker ve geçilecek çağlar.' },
     chips: { en: ['ages', 'economy', 'army'], tr: ['çağlar', 'ekonomi', 'asker'] } },
-  { id: 'AK-02', url: 'arac_kutusu.html', art: 'toolbox', h: { en: 'Toolbox', tr: 'Araç Kutusu' }, stack: 'HTML · JS',
+  { id: 'AK-02', url: 'https://erdevelop.com/arac_kutusu.html', art: 'toolbox', h: { en: 'Toolbox', tr: 'Araç Kutusu' }, stack: 'HTML · JS',
     type: { en: 'Utilities', tr: 'Araçlar' },
     s: { en: 'Phone-friendly calculators and converters in one page: loans, materials, dates and holidays, compass, sound meter, exchange rates.', tr: 'Telefonda rahat kullanılan hesaplayıcılar ve çeviriciler tek sayfada: kredi, malzeme, tarih ve tatiller, pusula, ses ölçer, döviz.' },
     chips: { en: ['30+ tools', 'phone-friendly', 'Turkish holidays'], tr: ['30+ araç', 'telefona uygun', 'resmi tatiller'] } },
-  { id: 'GH-03', url: 'GrassHopper.html', art: 'gh', lock: true, h: 'Mini Grasshopper 3D', stack: 'three.js',
+  { id: 'GH-03', url: 'https://erdevelop.com/GrassHopper.html', art: 'gh', lock: true, h: 'Mini Grasshopper 3D', stack: 'three.js',
     type: { en: 'Parametric 3D', tr: 'Parametrik 3D' },
     s: { en: 'Grasshopper-style parametric modelling in the browser: nodes on the left, live 3D on the right.', tr: 'Tarayıcıda Grasshopper usulü parametrik modelleme: solda düğümler, sağda canlı 3D.' },
     chips: { en: ['220+ components', '3DM · IFC · DXF export', 'presentation file'], tr: ['220+ bileşen', '3DM · IFC · DXF çıktı', 'sunum dosyası'] } },
-  { id: 'HD-04', url: 'araclar/hava.html', art: 'weather', h: { en: 'Weather', tr: 'Hava Durumu' }, stack: 'SVG · Open-Meteo',
+  { id: 'HD-04', url: 'https://erdevelop.com/araclar/hava.html', art: 'weather', h: { en: 'Weather', tr: 'Hava Durumu' }, stack: 'SVG · Open-Meteo',
     type: { en: 'Daily tool', tr: 'Günlük araç' },
     s: { en: 'Hourly chart for the next 48 hours and a 7-day forecast with rain chance, wind, UV and air quality.', tr: 'Önümüzdeki 48 saat için saatlik grafik ve 7 günlük tahmin: yağış olasılığı, rüzgâr, UV ve hava kalitesi.' },
     chips: { en: ['48 h chart', '7 days', 'saved places'], tr: ['48 saat grafik', '7 gün', 'kayıtlı yerler'] } }
@@ -617,10 +617,10 @@ function labArt(kind, i) {
 }
 
 const apps = [
-  { icon: 'oyunlar/assets/icon-192.png', h: 'Oyun Bahçesi', url: 'oyunlar/', s: { en: '12 mini games incl. 3D — plays offline', tr: '12 mini oyun (3B dahil) — internetsiz de çalışır' } },
-  { icon: 'MeteorWarEndless_icon.png', h: 'Meteor War Endless', url: 'apps/meteor-war.html', s: { en: 'space shooter', tr: 'uzay nişancı oyunu' } },
-  { icon: 'Numbermatic_icon.png', h: 'Numbermatic', url: 'apps/numbermatic.html', s: { en: 'number puzzle against the clock', tr: 'süreye karşı sayı bulmacası' } },
-  { icon: 'KelimeNotu_icon.png', h: 'Kelime Notu', url: 'apps/kelime-notu.html', s: { en: 'vocabulary notebook + flash cards', tr: 'kelime defteri + ezber kartları' } }
+  { icon: 'oyunlar/assets/icon-192.png', h: 'Oyun Bahçesi', url: 'https://erdevelop.com/oyunlar/', s: { en: '12 mini games incl. 3D — plays offline', tr: '12 mini oyun (3B dahil) — internetsiz de çalışır' } },
+  { icon: 'MeteorWarEndless_icon.png', h: 'Meteor War Endless', url: 'https://erdevelop.com/apps/meteor-war.html', s: { en: 'space shooter', tr: 'uzay nişancı oyunu' } },
+  { icon: 'Numbermatic_icon.png', h: 'Numbermatic', url: 'https://erdevelop.com/apps/numbermatic.html', s: { en: 'number puzzle against the clock', tr: 'süreye karşı sayı bulmacası' } },
+  { icon: 'KelimeNotu_icon.png', h: 'Kelime Notu', url: 'https://erdevelop.com/apps/kelime-notu.html', s: { en: 'vocabulary notebook + flash cards', tr: 'kelime defteri + ezber kartları' } }
 ];
 
 // [start year, start month, end year, end month]
@@ -704,7 +704,7 @@ const XP = [
   { loc: 'İstanbul', chips: ['Maslak No 1', { en: 'Free-form glass roof', tr: 'Serbest formlu cam çatı' }, { en: 'Glass domes', tr: 'Cam kubbeler' }] },
   { loc: 'İstanbul', chips: ['Göbeklitepe', { en: 'Baku Tower (for METAL YAPI)', tr: 'Baku Tower (METAL YAPI için)' }, { en: 'SO/ Paseo del Prado (for METAL YAPI)', tr: 'SO/ Paseo del Prado (METAL YAPI için)' }, 'Shop drawing', { en: 'Manufacturing drawings', tr: 'İmalat resimleri' }] },
   { loc: 'Kavacık, İstanbul', chips: ['Hamburg D1–D2', 'Heliosschulen', 'Origine', { en: 'Whale mouth', tr: 'Balina ağzı' }] },
-  { loc: 'İstanbul', chips: [{ t: 'Numbermatic', href: 'apps/numbermatic.html' }, { t: 'Meteor War Endless', href: 'apps/meteor-war.html' }, { t: 'Kelime Notu', href: 'apps/kelime-notu.html' }] },
+  { loc: 'İstanbul', chips: [{ t: 'Numbermatic', href: 'https://erdevelop.com/apps/numbermatic.html' }, { t: 'Meteor War Endless', href: 'https://erdevelop.com/apps/meteor-war.html' }, { t: 'Kelime Notu', href: 'https://erdevelop.com/apps/kelime-notu.html' }] },
   { loc: '', chips: ['Tour Triangle', 'La Tour Cacao', 'Yandex Headquarters', 'Chapter London Bridge'] },
   { loc: '', chips: [] },
   { loc: { en: 'Remote', tr: 'Uzaktan' }, chips: ['NBTC', 'ADB', 'TASO', 'TRC'], videos: [
@@ -1007,48 +1007,47 @@ const COMMANDS = [
   { n: ['tr', 'en'], g: 'gSite', tr: 'Dili değiştir', en: 'Switch language', run: (a, c) => { lang = c; render(); say(''); } },
   { n: ['dark', 'koyu'], g: 'gSite', tr: 'Koyu tema', en: 'Dark theme', run: () => { if (MODE !== 'dark') $('modeBtn').click(); say(L('mode') + ': dark'); } },
   { n: ['light', 'acik'], g: 'gSite', tr: 'Açık tema', en: 'Light theme', run: () => { if (MODE !== 'light') $('modeBtn').click(); say(L('mode') + ': light'); } },
-  { n: ['tools', 'araclar'], g: 'gSite', tr: 'Tüm araçlar sayfasını aç', en: 'Open all tools', run: () => { open('Tools.html', '_blank', 'noopener'); say(L('opened')); } },
+  { n: ['tools', 'araclar'], g: 'gSite', tr: 'Tüm araçlar sayfasını aç', en: 'Open all tools', run: () => { open('https://erdevelop.com/Tools.html', '_blank', 'noopener'); say(L('opened')); } },
   { n: ['mail', 'eposta'], g: 'gSite', tr: 'E-posta adresini kopyala', en: 'Copy e-mail address', run: () => { $('copyBtn').click(); say(L('copied') + ': ' + $('mail').textContent); } },
   { n: ['linkedin'], g: 'gSite', tr: 'LinkedIn profilini aç', en: 'Open LinkedIn profile', run: () => { open('https://www.linkedin.com/in/erdal-%C3%BCst%C3%BCnol-0808018b', '_blank', 'noopener'); say(L('opened')); } },
-  { n: ['wind', 'ruzgar'], g: 'gTools', tr: 'Rüzgar yükü (TS EN 1991-1-4)', en: 'Wind load', run: () => { open('kesif/ruzgar.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ruzgar.html'); } },
-  { n: ['glass', 'cam'], g: 'gTools', tr: 'Cam kalınlığı ve sehim', en: 'Glass thickness', run: () => { open('kesif/cam.html', '_blank', 'noopener'); say(L('opened') + ': kesif/cam.html'); } },
-  { n: ['snow', 'kar'], g: 'gTools', tr: 'Kar yükü (TS 498)', en: 'Snow load', run: () => { open('kesif/kar.html', '_blank', 'noopener'); say(L('opened') + ': kesif/kar.html'); } },
-  { n: ['sun', 'gunes'], g: 'gTools', tr: 'Güneş yolu ve gölge', en: 'Sun path & shading', run: () => { open('kesif/gunes.html', '_blank', 'noopener'); say(L('opened') + ': kesif/gunes.html'); } },
-  { n: ['section', 'kesit'], g: 'gTools', tr: 'Profil kesit ve dikme kontrolü', en: 'Profile section & mullion check', run: () => { open('kesif/profil.html', '_blank', 'noopener'); say(L('opened') + ': kesif/profil.html'); } },
-  { n: ['expansion', 'genlesme'], g: 'gTools', tr: 'Isıl genleşme ve derz', en: 'Thermal expansion', run: () => { open('kesif/genlesme.html', '_blank', 'noopener'); say(L('opened') + ': kesif/genlesme.html'); } },
-  { n: ['dew', 'yogusma'], g: 'gTools', tr: 'Çiğ noktası ve yoğuşma', en: 'Dew point & condensation', run: () => { open('kesif/yogusma.html', '_blank', 'noopener'); say(L('opened') + ': kesif/yogusma.html'); } },
-  { n: ['uvalue', 'ucw'], g: 'gTools', tr: 'Cephe U değeri (Ucw)', en: 'Curtain wall U-value', run: () => { open('kesif/ucw.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ucw.html'); } },
-  { n: ['colors', 'ral'], g: 'gTools', tr: 'RAL renk kartelası', en: 'RAL colour chart', run: () => { open('kesif/ral.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ral.html'); } },
-  { n: ['modulation', 'modul'], g: 'gTools', tr: 'Cephe modülasyonu', en: 'Facade modulation', run: () => { open('cephe-bolme.html', '_blank', 'noopener'); say(L('opened') + ': cephe-bolme.html'); } },
-  { n: ['glassweight', 'camagirlik'], g: 'gTools', tr: 'Cam ağırlığı', en: 'Glass weight', run: () => { open('cam-agirlik.html', '_blank', 'noopener'); say(L('opened') + ': cam-agirlik.html'); } },
-  { n: ['silicone', 'silikon'], g: 'gTools', tr: 'Yapısal silikon (bite)', en: 'Structural silicone', run: () => { open('kesif/silikon.html', '_blank', 'noopener'); say(L('opened') + ': kesif/silikon.html'); } },
-  { n: ['json', 'base64', 'hash', 'regex', 'uuid', 'unix', 'geliştirici', 'developer'], g: 'gTools', tr: 'Geliştirici araçları (JSON, Base64, Hash, Regex)', en: 'Developer tools', run: () => { open('araclar/gelistirici.html', '_blank', 'noopener'); say(L('opened') + ': araclar/gelistirici.html'); } },
-  { n: ['vscode', 'vs code', 'visual studio code'], g: 'gTools', tr: 'VS Code kısayolları', en: 'VS Code shortcuts', run: () => { open('komutlar/vscode.html', '_blank', 'noopener'); say(L('opened') + ': komutlar/vscode.html'); } },
-  { n: ['windows', 'windows kısayol', 'win'], g: 'gTools', tr: 'Windows kısayolları', en: 'Windows shortcuts', run: () => { open('komutlar/windows.html', '_blank', 'noopener'); say(L('opened') + ': komutlar/windows.html'); } },
-  { n: ['navisworks', 'navis', 'clash'], g: 'gTools', tr: 'Navisworks kısayolları', en: 'Navisworks shortcuts', run: () => { open('komutlar/navisworks.html', '_blank', 'noopener'); say(L('opened') + ': komutlar/navisworks.html'); } },
-  { n: ['joint', 'derz'], g: 'gTools', tr: 'Derz ve mastik', en: 'Joints & sealant', run: () => { open('kesif/derz.html', '_blank', 'noopener'); say(L('opened') + ': kesif/derz.html'); } },
-  { n: ['bend', 'bukum'], g: 'gTools', tr: 'Sac büküm açınımı', en: 'Sheet metal flat pattern', run: () => { open('kesif/bukum.html', '_blank', 'noopener'); say(L('opened') + ': kesif/bukum.html'); } },
-  { n: ['deflection', 'sehim'], g: 'gTools', tr: 'Dikme sehim kontrolü', en: 'Mullion deflection', run: () => { open('kesif/sehim.html', '_blank', 'noopener'); say(L('opened') + ': kesif/sehim.html'); } },
-  { n: ['anchor', 'ankraj'], g: 'gTools', tr: 'Braket ve dübel yükü', en: 'Bracket & anchor loads', run: () => { open('kesif/ankraj.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ankraj.html'); } },
-  { n: ['thermalstress', 'isilkirilma'], g: 'gTools', tr: 'Cam ısıl kırılma riski', en: 'Glass thermal stress', run: () => { open('kesif/isil-kirilma.html', '_blank', 'noopener'); say(L('opened') + ': kesif/isil-kirilma.html'); } },
-  { n: ['zeki', 'yapayzeki', 'robot'], g: 'gTools', tr: 'Yapay Zeki: konuşan robot arkadaş', en: 'Yapay Zeki: talking robot buddy', run: () => { open('yapay-zeki/', '_blank', 'noopener'); say(L('opened') + ': yapay-zeki/'); } },
-  { n: ['ai', 'yapayzeka', 'yz'], g: 'gTools', tr: 'Yapay zekâ bölümü', en: 'AI section', run: () => { open('yapay-zeka/', '_blank', 'noopener'); say(L('opened') + ': yapay-zeka/'); } },
-  { n: ['glossary', 'sozluk'], g: 'gTools', tr: 'Cephe terimleri sözlüğü', en: 'Facade glossary', run: () => { open('egitimler/sozluk/', '_blank', 'noopener'); say(L('opened') + ': egitimler/sozluk/'); } },
-  { n: ['dxfviewer', 'dxf'], g: 'gTools', tr: 'DXF görüntüleyici', en: 'DXF viewer', run: () => { open('dxf.html', '_blank', 'noopener'); say(L('opened') + ': dxf.html'); } },
-  { n: ['gh', 'grasshopper'], g: 'gTools', tr: 'Mini Grasshopper 3D', en: 'Mini Grasshopper 3D', run: () => { open('GrassHopper.html', '_blank', 'noopener'); say(L('opened') + ': GrassHopper.html'); } },
-  { n: ['toolbox', 'kutu'], g: 'gTools', tr: 'Araç Kutusu (hesaplayıcılar)', en: 'Toolbox (calculators)', run: () => { open('arac_kutusu.html', '_blank', 'noopener'); say(L('opened') + ': arac_kutusu.html'); } },
-  { n: ['weather', 'hava'], g: 'gTools', tr: 'Hava durumu', en: 'Weather', run: () => { open('araclar/hava.html', '_blank', 'noopener'); say(L('opened') + ': araclar/hava.html'); } },
-  { n: ['quake', 'deprem'], g: 'gTools', tr: 'Son depremler', en: 'Recent earthquakes', run: () => { open('kesif/deprem.html', '_blank', 'noopener'); say(L('opened') + ': kesif/deprem.html'); } },
-  { n: ['fuel', 'yakit'], g: 'gTools', tr: 'Yakıt hesaplama', en: 'Fuel calculator', run: () => { open('YakitHesapla.html', '_blank', 'noopener'); say(L('opened') + ': YakitHesapla.html'); } },
-  { n: ['kod', 'code'], g: 'gTools', tr: 'Tarayıcıda kod çalıştır', en: 'Run code in the browser', run: () => { open('Code.html', '_blank', 'noopener'); say(L('opened') + ': Code.html'); } },
-  { n: ['games', 'oyun'], g: 'gTools', tr: 'Oyun Bahçesi', en: 'Game Garden', run: () => { open('oyunlar/', '_blank', 'noopener'); say(L('opened') + ': oyunlar/'); } },
+  { n: ['wind', 'ruzgar'], g: 'gTools', tr: 'Rüzgar yükü (TS EN 1991-1-4)', en: 'Wind load', run: () => { open('https://erdevelop.com/kesif/ruzgar.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ruzgar.html'); } },
+  { n: ['glass', 'cam'], g: 'gTools', tr: 'Cam kalınlığı ve sehim', en: 'Glass thickness', run: () => { open('https://erdevelop.com/kesif/cam.html', '_blank', 'noopener'); say(L('opened') + ': kesif/cam.html'); } },
+  { n: ['snow', 'kar'], g: 'gTools', tr: 'Kar yükü (TS 498)', en: 'Snow load', run: () => { open('https://erdevelop.com/kesif/kar.html', '_blank', 'noopener'); say(L('opened') + ': kesif/kar.html'); } },
+  { n: ['sun', 'gunes'], g: 'gTools', tr: 'Güneş yolu ve gölge', en: 'Sun path & shading', run: () => { open('https://erdevelop.com/kesif/gunes.html', '_blank', 'noopener'); say(L('opened') + ': kesif/gunes.html'); } },
+  { n: ['section', 'kesit'], g: 'gTools', tr: 'Profil kesit ve dikme kontrolü', en: 'Profile section & mullion check', run: () => { open('https://erdevelop.com/kesif/profil.html', '_blank', 'noopener'); say(L('opened') + ': kesif/profil.html'); } },
+  { n: ['expansion', 'genlesme'], g: 'gTools', tr: 'Isıl genleşme ve derz', en: 'Thermal expansion', run: () => { open('https://erdevelop.com/kesif/genlesme.html', '_blank', 'noopener'); say(L('opened') + ': kesif/genlesme.html'); } },
+  { n: ['dew', 'yogusma'], g: 'gTools', tr: 'Çiğ noktası ve yoğuşma', en: 'Dew point & condensation', run: () => { open('https://erdevelop.com/kesif/yogusma.html', '_blank', 'noopener'); say(L('opened') + ': kesif/yogusma.html'); } },
+  { n: ['uvalue', 'ucw'], g: 'gTools', tr: 'Cephe U değeri (Ucw)', en: 'Curtain wall U-value', run: () => { open('https://erdevelop.com/kesif/ucw.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ucw.html'); } },
+  { n: ['colors', 'ral'], g: 'gTools', tr: 'RAL renk kartelası', en: 'RAL colour chart', run: () => { open('https://erdevelop.com/kesif/ral.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ral.html'); } },
+  { n: ['modulation', 'modul'], g: 'gTools', tr: 'Cephe modülasyonu', en: 'Facade modulation', run: () => { open('https://erdevelop.com/cephe-bolme.html', '_blank', 'noopener'); say(L('opened') + ': cephe-bolme.html'); } },
+  { n: ['glassweight', 'camagirlik'], g: 'gTools', tr: 'Cam ağırlığı', en: 'Glass weight', run: () => { open('https://erdevelop.com/cam-agirlik.html', '_blank', 'noopener'); say(L('opened') + ': cam-agirlik.html'); } },
+  { n: ['silicone', 'silikon'], g: 'gTools', tr: 'Yapısal silikon (bite)', en: 'Structural silicone', run: () => { open('https://erdevelop.com/kesif/silikon.html', '_blank', 'noopener'); say(L('opened') + ': kesif/silikon.html'); } },
+  { n: ['json', 'base64', 'hash', 'regex', 'uuid', 'unix', 'geliştirici', 'developer'], g: 'gTools', tr: 'Geliştirici araçları (JSON, Base64, Hash, Regex)', en: 'Developer tools', run: () => { open('https://erdevelop.com/araclar/gelistirici.html', '_blank', 'noopener'); say(L('opened') + ': araclar/gelistirici.html'); } },
+  { n: ['vscode', 'vs code', 'visual studio code'], g: 'gTools', tr: 'VS Code kısayolları', en: 'VS Code shortcuts', run: () => { open('https://erdevelop.com/komutlar/vscode.html', '_blank', 'noopener'); say(L('opened') + ': komutlar/vscode.html'); } },
+  { n: ['windows', 'windows kısayol', 'win'], g: 'gTools', tr: 'Windows kısayolları', en: 'Windows shortcuts', run: () => { open('https://erdevelop.com/komutlar/windows.html', '_blank', 'noopener'); say(L('opened') + ': komutlar/windows.html'); } },
+  { n: ['navisworks', 'navis', 'clash'], g: 'gTools', tr: 'Navisworks kısayolları', en: 'Navisworks shortcuts', run: () => { open('https://erdevelop.com/komutlar/navisworks.html', '_blank', 'noopener'); say(L('opened') + ': komutlar/navisworks.html'); } },
+  { n: ['joint', 'derz'], g: 'gTools', tr: 'Derz ve mastik', en: 'Joints & sealant', run: () => { open('https://erdevelop.com/kesif/derz.html', '_blank', 'noopener'); say(L('opened') + ': kesif/derz.html'); } },
+  { n: ['bend', 'bukum'], g: 'gTools', tr: 'Sac büküm açınımı', en: 'Sheet metal flat pattern', run: () => { open('https://erdevelop.com/kesif/bukum.html', '_blank', 'noopener'); say(L('opened') + ': kesif/bukum.html'); } },
+  { n: ['deflection', 'sehim'], g: 'gTools', tr: 'Dikme sehim kontrolü', en: 'Mullion deflection', run: () => { open('https://erdevelop.com/kesif/sehim.html', '_blank', 'noopener'); say(L('opened') + ': kesif/sehim.html'); } },
+  { n: ['anchor', 'ankraj'], g: 'gTools', tr: 'Braket ve dübel yükü', en: 'Bracket & anchor loads', run: () => { open('https://erdevelop.com/kesif/ankraj.html', '_blank', 'noopener'); say(L('opened') + ': kesif/ankraj.html'); } },
+  { n: ['thermalstress', 'isilkirilma'], g: 'gTools', tr: 'Cam ısıl kırılma riski', en: 'Glass thermal stress', run: () => { open('https://erdevelop.com/kesif/isil-kirilma.html', '_blank', 'noopener'); say(L('opened') + ': kesif/isil-kirilma.html'); } },
+  { n: ['zeki', 'yapayzeki', 'robot'], g: 'gTools', tr: 'Yapay Zeki: konuşan robot arkadaş', en: 'Yapay Zeki: talking robot buddy', run: () => { open('https://erdevelop.com/yapay-zeki/', '_blank', 'noopener'); say(L('opened') + ': yapay-zeki/'); } },
+  { n: ['ai', 'yapayzeka', 'yz'], g: 'gTools', tr: 'Yapay zekâ bölümü', en: 'AI section', run: () => { open('https://erdevelop.com/yapay-zeka/', '_blank', 'noopener'); say(L('opened') + ': yapay-zeka/'); } },
+  { n: ['glossary', 'sozluk'], g: 'gTools', tr: 'Cephe terimleri sözlüğü', en: 'Facade glossary', run: () => { open('https://erdevelop.com/egitimler/sozluk/', '_blank', 'noopener'); say(L('opened') + ': egitimler/sozluk/'); } },
+  { n: ['dxfviewer', 'dxf'], g: 'gTools', tr: 'DXF görüntüleyici', en: 'DXF viewer', run: () => { open('https://erdevelop.com/dxf.html', '_blank', 'noopener'); say(L('opened') + ': dxf.html'); } },
+  { n: ['gh', 'grasshopper'], g: 'gTools', tr: 'Mini Grasshopper 3D', en: 'Mini Grasshopper 3D', run: () => { open('https://erdevelop.com/GrassHopper.html', '_blank', 'noopener'); say(L('opened') + ': GrassHopper.html'); } },
+  { n: ['toolbox', 'kutu'], g: 'gTools', tr: 'Araç Kutusu (hesaplayıcılar)', en: 'Toolbox (calculators)', run: () => { open('https://erdevelop.com/arac_kutusu.html', '_blank', 'noopener'); say(L('opened') + ': arac_kutusu.html'); } },
+  { n: ['weather', 'hava'], g: 'gTools', tr: 'Hava durumu', en: 'Weather', run: () => { open('https://erdevelop.com/araclar/hava.html', '_blank', 'noopener'); say(L('opened') + ': araclar/hava.html'); } },
+  { n: ['quake', 'deprem'], g: 'gTools', tr: 'Son depremler', en: 'Recent earthquakes', run: () => { open('https://erdevelop.com/kesif/deprem.html', '_blank', 'noopener'); say(L('opened') + ': kesif/deprem.html'); } },
+  { n: ['fuel', 'yakit'], g: 'gTools', tr: 'Yakıt hesaplama', en: 'Fuel calculator', run: () => { open('https://erdevelop.com/YakitHesapla.html', '_blank', 'noopener'); say(L('opened') + ': YakitHesapla.html'); } },
+  { n: ['kod', 'code'], g: 'gTools', tr: 'Tarayıcıda kod çalıştır', en: 'Run code in the browser', run: () => { open('https://erdevelop.com/Code.html', '_blank', 'noopener'); say(L('opened') + ': Code.html'); } },
+  { n: ['games', 'oyun'], g: 'gTools', tr: 'Oyun Bahçesi', en: 'Game Garden', run: () => { open('https://erdevelop.com/oyunlar/', '_blank', 'noopener'); say(L('opened') + ': oyunlar/'); } },
   { n: ['help', 'yardim', '?'], g: 'gMisc', tr: 'Bu listeyi göster', en: 'Show this list', run: () => openHelp() },
   { n: ['whoami', 'kimim'], g: 'gMisc', tr: 'Kısa tanıtım', en: 'Short intro', run: () => say(L('who')) },
   { n: ['history', 'gecmis'], g: 'gMisc', tr: 'Son yazılan komutlar', en: 'Recent commands', run: () => say(HIST.length ? HIST.slice(-8).join(' · ') : L('none')) },
   { n: ['clear', 'temizle'], g: 'gMisc', tr: 'Çıktıyı temizle', en: 'Clear output', run: () => say('') },
   { n: ['wiki', 'vikipedi'], a: lang => lang === 'tr' ? 'konu' : 'topic', raw: 1, g: 'gMisc', tr: 'Vikipedi\'den kısa özet (ör. wiki Göbeklitepe)', en: 'Wikipedia summary (e.g. wiki Gobekli Tepe)', run: a => wiki(a) },
   { n: ['ziyaret', 'visits'], hide: 1, g: 'gMisc', run: () => showVisits() },
-  { n: ['istatistik', 'analiz', 'stats', 'analytics'], hide: 1, g: 'gMisc', run: () => { say(lang === 'tr' ? 'İstatistik paneli açılıyor…' : 'Opening analytics…'); location.href = '/ozelaraclar/istatistik.html'; } }
 ];
 // Vikipedi özeti (dil sitenin diline göre)
 async function wiki(q) {
@@ -1639,9 +1638,7 @@ async function scene3d(progress) {
 
 </script>
 
-<script>if ('serviceWorker' in navigator && location.protocol === 'https:') addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => { }));</script>
-<script data-goatcounter="https://erdevelop.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script>/* Hakkında sayfası, o an seçili dille açılsın */document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="hakkinda.html"]');if(a)try{localStorage.setItem('erdevelop-lang',document.documentElement.lang==='en'?'en':'tr')}catch(x){}});</script>
+<script>/* Hakkında sayfası, o an seçili dille açılsın */document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="https://erdevelop.com/hakkinda.html"]');if(a)try{localStorage.setItem('erdevelop-lang',document.documentElement.lang==='en'?'en':'tr')}catch(x){}});</script>
 
 </body>
 </html>

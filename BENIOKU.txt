@@ -1,0 +1,8 @@
+CV SİTESİ – YENİ GITHUB HESABINA KURULUM
+1) Yeni bir GitHub hesabı aç (örnek kullanıcı adı: erdalustunol).
+2) Yeni depo oluştur, adı tam olarak:  <kullanıcıadı>.github.io   (Public)
+3) "uploading an existing file" ile bu klasördeki dosyaları yükle (klasördeki her şeyi), Commit.
+4) Settings > Pages > Source: Deploy from a branch, Branch: main / (root) > Save.
+5) 1-2 dakika sonra https://<kullanıcıadı>.github.io adresinde açılır.
+Not: Reklam, site araması ve sayaç bu kopyadan çıkarıldı; fotoğraflar ve simgeler bu klasörde; araç bağlantıları erdevelop.com'a gider.
+Bu depoya CNAME dosyası EKLEME (eklenirse adres başka bir alan adına yönlenir).
